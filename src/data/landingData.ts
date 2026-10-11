@@ -285,7 +285,7 @@ export const PRICING = {
     subtitle: 'Kit Vitaminas Injetáveis',
     description: 'Ideal para quem deseja começar pelo essencial e ter materiais organizados para estudar e consultar.',
     price: 'R$ 19,90',
-    checkoutUrl: '#',
+    checkoutUrl: 'https://pay.wiapy.com/OkPO_GCXuMK',
     features: [
       'Kit Vitaminas Injetáveis',
       'Materiais para estudo e revisão',
@@ -299,7 +299,7 @@ export const PRICING = {
     subtitle: 'Kit Vitaminas Injetáveis + todos os bônus',
     description: 'A opção mais indicada para quem deseja um acervo completo para estudo e consulta.',
     price: 'R$ 29,90',
-    checkoutUrl: '#',
+    checkoutUrl: 'https://pay.wiapy.com/KHeZxqCO5Pkc',
     image: '/assets/vitaminas-kit-completo-XaSl-M8f.png',
     bonusIncludedText: 'R$ 54,60 EM BÔNUS — HOJE INCLUSOS',
     installmentsText: 'Só R$ 10 a mais que o Básico.',
