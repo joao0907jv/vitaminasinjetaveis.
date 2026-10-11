@@ -5,12 +5,7 @@ import { FIRST_CAROUSEL_ITEMS, CarouselItem } from '../data/landingData';
 export function ShowcaseSection() {
   const [selectedPoster, setSelectedPoster] = useState<CarouselItem | null>(null);
 
-  // Duplicamos 3x para loop contínuo perfeitamente fluido sem lacunas
-  const marqueeItems = [
-    ...FIRST_CAROUSEL_ITEMS,
-    ...FIRST_CAROUSEL_ITEMS,
-    ...FIRST_CAROUSEL_ITEMS,
-  ];
+  const sampleItems = FIRST_CAROUSEL_ITEMS.slice(0, 3);
 
   return (
     <section className="showcase-custom-section section-pad" id="materiais">
@@ -22,8 +17,8 @@ export function ShowcaseSection() {
 
         {/* Subtítulo explicativo */}
         <p className="showcase-custom-subtitle">
-          Não são apenas folhas soltas. São propostas visuais organizadas para facilitar a
-          consulta e o estudo de acordo com o objetivo que você deseja trabalhar.
+          Veja exemplos de páginas sobre B12, vitamina A e vitamina D.
+          Toque em uma página para ampliar e conferir os detalhes do material.
         </p>
 
         {/* Imagem do Mockup e Comparativo Antes x Depois com fundo transparente */}
@@ -39,30 +34,20 @@ export function ShowcaseSection() {
         </div>
       </div>
 
-      {/* Carrossel em Contínuo Movimento Infinito */}
-      <div className="marquee-outer-wrapper">
-        <div className="marquee-track">
-          {marqueeItems.map((item, index) => (
-            <div
-              key={`${item.id}-${index}`}
-              className="marquee-card-item"
-              onClick={() => setSelectedPoster(item)}
-              title="Clique para ampliar"
-            >
-              <img
-                src={item.image}
-                alt={item.title}
-                className="marquee-card-img"
-                loading="lazy"
-              />
-              <div className="marquee-card-overlay">
-                <span className="marquee-zoom-pill">
-                  <ZoomIn size={16} /> Ampliar
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className="shell" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: 24, maxWidth: 1050 }}>
+        {sampleItems.map((item) => (
+          <button
+            key={item.id}
+            type="button"
+            onClick={() => setSelectedPoster(item)}
+            aria-label={`Ampliar página: ${item.title}`}
+            style={{ background: '#fff', border: 0, borderRadius: 14, padding: 12, cursor: 'pointer', color: '#245055', textAlign: 'center' }}
+          >
+            <img src={item.image} alt={item.title} loading="lazy" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8 }} />
+            <strong style={{ display: 'block', marginTop: 12 }}>{item.title}</strong>
+            <span style={{ display: 'inline-flex', gap: 6, alignItems: 'center', marginTop: 8 }}><ZoomIn size={16} /> Toque para ampliar</span>
+          </button>
+        ))}
       </div>
 
       {/* Modal Lightbox ao clicar na imagem */}
@@ -72,6 +57,8 @@ export function ShowcaseSection() {
           onClick={() => setSelectedPoster(null)}
           role="dialog"
           aria-modal="true"
+          aria-label={`Página do material: ${selectedPoster.title}`}
+          onKeyDown={(event) => { if (event.key === 'Escape') setSelectedPoster(null); }}
         >
           <div
             className="poster-modal-content"
@@ -81,6 +68,7 @@ export function ShowcaseSection() {
               type="button"
               className="poster-modal-close"
               onClick={() => setSelectedPoster(null)}
+              autoFocus
               aria-label="Fechar"
             >
               <X size={26} />
