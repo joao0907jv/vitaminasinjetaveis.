@@ -5,11 +5,12 @@ import { FIRST_CAROUSEL_ITEMS, CarouselItem } from '../data/landingData';
 export function ShowcaseSection() {
   const [selectedPoster, setSelectedPoster] = useState<CarouselItem | null>(null);
 
-  const sampleItems = FIRST_CAROUSEL_ITEMS.slice(0, 3).map((item, index) => ({
-    ...item,
-    title: ['Vitamina C', 'Complexo B', 'Vitamina A (Retinol)'][index],
-    subtitle: 'Exemplo de página do Kit — estudo e consulta',
-  }));
+  // Duplicamos 3x para loop contínuo perfeitamente fluido sem lacunas
+  const marqueeItems = [
+    ...FIRST_CAROUSEL_ITEMS,
+    ...FIRST_CAROUSEL_ITEMS,
+    ...FIRST_CAROUSEL_ITEMS,
+  ];
 
   return (
     <section className="showcase-custom-section section-pad" id="materiais">
@@ -21,7 +22,7 @@ export function ShowcaseSection() {
 
         {/* Subtítulo explicativo */}
         <p className="showcase-custom-subtitle">
-          Veja exemplos de páginas sobre vitamina C, complexo B e vitamina A.
+          Confira exemplos dos materiais do Kit no carrossel abaixo.
           Toque em uma página para ampliar e conferir os detalhes do material.
         </p>
 
@@ -38,20 +39,30 @@ export function ShowcaseSection() {
         </div>
       </div>
 
-      <div className="shell" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: 24, maxWidth: 1050 }}>
-        {sampleItems.map((item) => (
-          <button
-            key={item.id}
-            type="button"
-            onClick={() => setSelectedPoster(item)}
-            aria-label={`Ampliar página: ${item.title}`}
-            style={{ background: '#fff', border: 0, borderRadius: 14, padding: 12, cursor: 'pointer', color: '#245055', textAlign: 'center' }}
-          >
-            <img src={item.image} alt={item.title} loading="lazy" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8 }} />
-            <strong style={{ display: 'block', marginTop: 12 }}>{item.title}</strong>
-            <span style={{ display: 'inline-flex', gap: 6, alignItems: 'center', marginTop: 8 }}><ZoomIn size={16} /> Toque para ampliar</span>
-          </button>
-        ))}
+      {/* Carrossel em Contínuo Movimento Infinito */}
+      <div className="marquee-outer-wrapper">
+        <div className="marquee-track">
+          {marqueeItems.map((item, index) => (
+            <div
+              key={`${item.id}-${index}`}
+              className="marquee-card-item"
+              onClick={() => setSelectedPoster(item)}
+              title="Clique para ampliar"
+            >
+              <img
+                src={item.image}
+                alt={item.title}
+                className="marquee-card-img"
+                loading="lazy"
+              />
+              <div className="marquee-card-overlay">
+                <span className="marquee-zoom-pill">
+                  <ZoomIn size={16} /> Ampliar
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Modal Lightbox ao clicar na imagem */}
