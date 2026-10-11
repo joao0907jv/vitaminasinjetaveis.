@@ -1,6 +1,6 @@
 import { LockKeyhole, Mail, Check } from 'lucide-react';
 import { CtaButton } from './CtaButton';
-import { QUICK_BENEFITS } from '../data/landingData';
+import { QUICK_BENEFITS, PRICING } from '../data/landingData';
 
 export function HeroSection() {
   return (
@@ -11,17 +11,14 @@ export function HeroSection() {
 
       <p className="kicker">— KIT VITAMINAS INJETÁVEIS —</p>
 
-      <h1>
-        <em>+150 MATERIAIS DE</em>
-        <br />
-        VITAMINAS INJETÁVEIS
+      <h1 style={{ fontSize: 'clamp(30px, 5vw, 54px)', lineHeight: 1.15 }}>
+        Entenda melhor as <em>vitaminas injetáveis</em> com +150 materiais visuais
       </h1>
 
       <div className="coral-rule" />
 
       <h2>
-        Tenha +150 materiais sobre Vitaminas Injetáveis reunidos em um único Kit para estudar,
-        consultar e revisar quando precisar.
+        Estude, revise e encontre informações em um só lugar, pelo celular ou computador.
       </h2>
 
       <img
@@ -33,10 +30,9 @@ export function HeroSection() {
       />
 
       <p className="hero-copy">
-        Chega de perder tempo! Em vez de procurar conteúdos soltos ou depender de dezenas de fontes
-        diferentes, você recebe{' '}
-        <strong>+150 materiais organizados e fáceis de consultar</strong> sobre vitaminas,
-        apresentações, características, cuidados e segurança.
+        Conheça conteúdos sobre <strong>B12, vitaminas A, C e D e complexo B</strong>,
+        com apresentações, características, guias visuais e cuidados importantes.
+        Um acervo educativo para complementar seus estudos e consultar quando surgir uma dúvida.
       </p>
 
       <div className="quick-benefits">
@@ -48,10 +44,14 @@ export function HeroSection() {
         ))}
       </div>
 
+      <p className="hero-copy" style={{ marginBottom: 14 }}>
+        <strong>A partir de {PRICING.basic.price}</strong><br />
+        Material digital • Pagamento único
+      </p>
       <CtaButton>QUERO ACESSAR O MATERIAL AGORA</CtaButton>
 
       <small className="access-note">
-        <Mail size={16} /> Acesso digital enviado após a confirmação do pagamento.
+        <Mail size={16} /> Após a confirmação do pagamento, receba os dados de acesso para baixar os PDFs e consultar pelo celular, tablet ou computador.
       </small>
     </section>
   );
