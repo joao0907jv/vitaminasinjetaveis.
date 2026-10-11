@@ -29,7 +29,7 @@ export function ShowcaseSection() {
         {/* Imagem do Mockup e Comparativo Antes x Depois com fundo transparente */}
         <div className="showcase-hero-image-wrapper">
           <img
-            src="/assets/showcase-antes-depois.png"
+            src="/assets/showcase-completo.svg"
             alt="Materiais organizados e comparativo Antes x Depois"
             className="showcase-hero-image"
             loading="lazy"
