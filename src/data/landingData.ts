@@ -283,7 +283,7 @@ export const PRICING = {
   basic: {
     tag: 'PLANO BÁSICO',
     subtitle: 'Kit Vitaminas Injetáveis',
-    description: 'Ideal para quem deseja começar pelo essencial e ter materiais organizados para estudar e consultar.',
+    description: 'O Kit principal com materiais digitais para estudar e consultar. Os quatro bônus são exclusivos do Plano Completo.',
     price: 'R$ 14,90',
     checkoutUrl: 'https://pay.wiapy.com/OkPO_GCXuMK',
     features: [
@@ -297,7 +297,7 @@ export const PRICING = {
   complete: {
     tag: 'PLANO COMPLETO',
     subtitle: 'Kit Vitaminas Injetáveis + todos os bônus',
-    description: 'A opção mais indicada para quem deseja um acervo completo para estudo e consulta.',
+    description: 'Tudo do Plano Básico + Guia de Consulta Rápida, Tabelas Visuais de Vitaminas, Checklist de Cuidados e Segurança e Biblioteca Extra Profissional.',
     price: 'R$ 29,90',
     checkoutUrl: 'https://pay.wiapy.com/KHeZxqCO5Pkc',
     image: '/assets/vitaminas-kit-completo-XaSl-M8f.png',
