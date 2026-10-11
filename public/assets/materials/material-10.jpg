@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 580" width="420" height="580" fill="none">
+  <!-- Poster Background -->
+  <rect width="420" height="580" fill="#ffffff" rx="16"/>
+  <rect x="0" y="0" width="420" height="580" stroke="#e2e8f0" stroke-width="2" rx="16"/>
+
+  <!-- Header Banner -->
+  <rect x="0" y="0" width="420" height="110" fill="#d97706" rx="16"/>
+  <rect x="0" y="90" width="420" height="20" fill="#d97706"/>
+
+  <!-- Badge Top Left -->
+  <rect x="20" y="14" width="130" height="18" rx="9" fill="#b45309"/>
+  <text x="85" y="26" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8.5" font-weight="800" fill="#ffffff" letter-spacing="0.08em">GUIA DE CONSULTA</text>
+
+  <!-- Title -->
+  <text x="20" y="60" font-family="'Archivo Black', system-ui, sans-serif" font-size="24" font-weight="900" fill="#ffffff" letter-spacing="-0.02em">VITAMINA C</text>
+
+  <!-- Subtitle Red/Orange Pill -->
+  <rect x="20" y="70" width="260" height="18" rx="4" fill="#dc2626"/>
+  <text x="150" y="82" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8.5" font-weight="800" fill="#ffffff" letter-spacing="0.04em">ÁCIDO ASCÓRBICO & IMUNIDADE</text>
+
+  <!-- Amber Vial Graphic on Top Right -->
+  <g transform="translate(325, 12)">
+    <!-- Vial Cap -->
+    <rect x="18" y="4" width="28" height="10" rx="3" fill="#cbd5e1" stroke="#64748b"/>
+    <rect x="20" y="12" width="24" height="4" fill="#94a3b8"/>
+    <!-- Vial Body -->
+    <rect x="14" y="16" width="36" height="66" rx="6" fill="#d97706" stroke="#b45309" stroke-width="1.5"/>
+    <rect x="18" y="22" width="28" height="52" fill="#b45309" opacity="0.6"/>
+    <!-- Label -->
+    <rect x="17" y="28" width="30" height="40" rx="2" fill="#ffffff"/>
+    <text x="32" y="42" text-anchor="middle" font-family="system-ui, sans-serif" font-size="6.5" font-weight="900" fill="#1e293b">VIT C PLUS</text>
+    <rect x="20" y="48" width="24" height="10" rx="2" fill="#facc15"/>
+    <text x="32" y="55" text-anchor="middle" font-family="system-ui, sans-serif" font-size="4.8" font-weight="800" fill="#854d0e">500 mg/mL</text>
+    <text x="32" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="4" font-weight="700" fill="#64748b">USO IM / IV</text>
+  </g>
+
+  <!-- Section 1: O Que É? -->
+  <rect x="20" y="120" width="380" height="58" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <rect x="20" y="120" width="380" height="20" rx="8" fill="#d97706" opacity="0.12"/>
+  <text x="30" y="134" font-family="system-ui, sans-serif" font-size="9" font-weight="800" fill="#d97706">💡 O QUE É?</text>
+  <text x="30" y="152" font-family="system-ui, sans-serif" font-size="9" fill="#334155" width="360">Visão comparativa de fontes naturais (laranja, acerola, kiwi) versus formas</text>
+  <text x="30" y="166" font-family="system-ui, sans-serif" font-size="9" fill="#334155" width="360"> farmacêuticas de alta concentração.</text>
+
+  <!-- Section 2: Benefícios -->
+  <rect x="20" y="186" width="380" height="105" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <rect x="20" y="186" width="380" height="20" rx="8" fill="#d97706" opacity="0.12"/>
+  <text x="30" y="200" font-family="system-ui, sans-serif" font-size="9" font-weight="800" fill="#d97706">⚡ PRINCIPAIS BENEFÍCIOS</text>
+  
+    <circle cx="32" cy="215" r="4" fill="#d97706"/>
+    <text x="44" y="219" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#334155">Combate radicais livres</text>
+  
+    <circle cx="32" cy="235" r="4" fill="#d97706"/>
+    <text x="44" y="239" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#334155">Integridade vascular</text>
+  
+    <circle cx="32" cy="255" r="4" fill="#d97706"/>
+    <text x="44" y="259" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#334155">Recuperação tecidual</text>
+  
+    <circle cx="32" cy="275" r="4" fill="#d97706"/>
+    <text x="44" y="279" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#334155">Suporte pós-cirúrgico</text>
+  
+
+  <!-- Section 3: Tabela de Apresentações -->
+  <rect x="20" y="298" width="380" height="145" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  <rect x="20" y="298" width="380" height="22" rx="8" fill="#d97706"/>
+  <text x="30" y="313" font-family="system-ui, sans-serif" font-size="9" font-weight="800" fill="#ffffff">📋 APRESENTAÇÕES COMUNS & DOSES</text>
+
+  <!-- Table Head -->
+  <rect x="20" y="320" width="380" height="18" fill="#f1f5f9"/>
+  <text x="30" y="332" font-family="system-ui, sans-serif" font-size="8" font-weight="800" fill="#475569">PRINCÍPIO</text>
+  <text x="160" y="332" font-family="system-ui, sans-serif" font-size="8" font-weight="800" fill="#475569">CONCENTRAÇÃO</text>
+  <text x="270" y="332" font-family="system-ui, sans-serif" font-size="8" font-weight="800" fill="#475569">VOLUME</text>
+  <text x="350" y="332" font-family="system-ui, sans-serif" font-size="8" font-weight="800" fill="#475569">VIA</text>
+  
+    <rect x="20" y="340" width="380" height="22" fill="#f8fafc" />
+    <text x="30" y="355" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#1e293b">Manutenção</text>
+    <text x="160" y="355" font-family="system-ui, sans-serif" font-size="9" fill="#475569">500 mg a 1.000 mg</text>
+    <text x="270" y="355" font-family="system-ui, sans-serif" font-size="9" fill="#475569">Conforme avaliação</text>
+    <text x="350" y="355" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#d97706">IM / IV</text>
+  
+    <rect x="20" y="364" width="380" height="22" fill="#ffffff" />
+    <text x="30" y="379" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#1e293b">Deficiência clínica</text>
+    <text x="160" y="379" font-family="system-ui, sans-serif" font-size="9" fill="#475569">1.000 mg a 3.000 mg</text>
+    <text x="270" y="379" font-family="system-ui, sans-serif" font-size="9" fill="#475569">Necessidade</text>
+    <text x="350" y="379" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#d97706">IV lenta</text>
+  
+    <rect x="20" y="388" width="380" height="22" fill="#f8fafc" />
+    <text x="30" y="403" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#1e293b">Suporte imune</text>
+    <text x="160" y="403" font-family="system-ui, sans-serif" font-size="9" fill="#475569">500 mg a 2.000 mg</text>
+    <text x="270" y="403" font-family="system-ui, sans-serif" font-size="9" fill="#475569">Protocolo</text>
+    <text x="350" y="403" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#d97706">IV / IM</text>
+  
+    <rect x="20" y="412" width="380" height="22" fill="#ffffff" />
+    <text x="30" y="427" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#1e293b">Cirúrgico</text>
+    <text x="160" y="427" font-family="system-ui, sans-serif" font-size="9" fill="#475569">1.000 mg</text>
+    <text x="270" y="427" font-family="system-ui, sans-serif" font-size="9" fill="#475569">Diária</text>
+    <text x="350" y="427" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#d97706">IV</text>
+  
+
+  <!-- Section 4: Vias e Cuidados -->
+  <rect x="20" y="450" width="185" height="74" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="28" y="466" font-family="system-ui, sans-serif" font-size="8.5" font-weight="800" fill="#d97706">💉 VIAS DE APLICAÇÃO</text>
+  <text x="28" y="482" font-family="system-ui, sans-serif" font-size="8" fill="#475569">IM ou IV diluído em SF 0,9%.</text>
+  <text x="28" y="495" font-family="system-ui, sans-serif" font-size="8" fill="#475569"></text>
+
+  <rect x="215" y="450" width="185" height="74" rx="8" fill="#fef2f2" stroke="#fecaca"/>
+  <text x="223" y="466" font-family="system-ui, sans-serif" font-size="8.5" font-weight="800" fill="#dc2626">⚠️ CUIDADOS & SEGURANÇA</text>
+  <text x="223" y="482" font-family="system-ui, sans-serif" font-size="8" fill="#7f1d1d">Proteger frasco da luz solar direta</text>
+  <text x="223" y="495" font-family="system-ui, sans-serif" font-size="8" fill="#7f1d1d">. Conservar em temperatura ambiente.</text>
+
+  <!-- Bottom Notice -->
+  <rect x="20" y="534" width="380" height="30" rx="6" fill="#fef2f2" stroke="#f87171"/>
+  <text x="210" y="552" text-anchor="middle" font-family="system-ui, sans-serif" font-size="7.5" font-weight="700" fill="#b91c1c">📢 MATERIAL INFORMATIVO DE APOIO — NÃO SUBSTITUI ORIENTAÇÃO PROFISSIONAL</text>
+</svg>
