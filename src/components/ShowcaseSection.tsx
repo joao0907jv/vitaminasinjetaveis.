@@ -5,7 +5,11 @@ import { FIRST_CAROUSEL_ITEMS, CarouselItem } from '../data/landingData';
 export function ShowcaseSection() {
   const [selectedPoster, setSelectedPoster] = useState<CarouselItem | null>(null);
 
-  const sampleItems = FIRST_CAROUSEL_ITEMS.slice(0, 3);
+  const sampleItems = FIRST_CAROUSEL_ITEMS.slice(0, 3).map((item, index) => ({
+    ...item,
+    title: ['Vitamina C', 'Complexo B', 'Vitamina A (Retinol)'][index],
+    subtitle: 'Exemplo de página do Kit — estudo e consulta',
+  }));
 
   return (
     <section className="showcase-custom-section section-pad" id="materiais">
@@ -17,7 +21,7 @@ export function ShowcaseSection() {
 
         {/* Subtítulo explicativo */}
         <p className="showcase-custom-subtitle">
-          Veja exemplos de páginas sobre B12, vitamina A e vitamina D.
+          Veja exemplos de páginas sobre vitamina C, complexo B e vitamina A.
           Toque em uma página para ampliar e conferir os detalhes do material.
         </p>
 
