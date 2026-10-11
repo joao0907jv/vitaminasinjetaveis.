@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 210" width="160" height="168" fill="none">
+  <defs>
+    <!-- Gold Metallic Gradients -->
+    <linearGradient id="goldRibbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CA8A04"/>
+      <stop offset="25%" stop-color="#EAB308"/>
+      <stop offset="50%" stop-color="#FEF08A"/>
+      <stop offset="75%" stop-color="#CA8A04"/>
+      <stop offset="100%" stop-color="#854D0E"/>
+    </linearGradient>
+
+    <radialGradient id="goldRadial" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FEF9C3"/>
+      <stop offset="30%" stop-color="#FACC15"/>
+      <stop offset="70%" stop-color="#CA8A04"/>
+      <stop offset="100%" stop-color="#854D0E"/>
+    </radialGradient>
+
+    <linearGradient id="goldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="35%" stop-color="#CA8A04"/>
+      <stop offset="70%" stop-color="#FEF9C3"/>
+      <stop offset="100%" stop-color="#854D0E"/>
+    </linearGradient>
+
+    <filter id="sealShadow" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#854d0e" flood-opacity="0.3"/>
+    </filter>
+
+    <!-- Arc text path for GARANTIA DE SATISFACAO -->
+    <path id="textArcTop" d="M 52,90 A 48,48 0 0,1 148,90" />
+    <path id="textArcBanner" d="M 45,134 Q 100,146 155,134" />
+  </defs>
+
+  <g filter="url(#sealShadow)">
+    <!-- Ribbon Tails (Left & Right) -->
+    <!-- Left Ribbon -->
+    <path d="M 70,120 L 45,195 L 68,180 L 90,195 L 82,120 Z" fill="url(#goldRibbon)"/>
+    <path d="M 45,195 L 68,180 L 70,120 L 58,155 Z" fill="#854D0E" opacity="0.3"/>
+
+    <!-- Right Ribbon -->
+    <path d="M 130,120 L 155,195 L 132,180 L 110,195 L 118,120 Z" fill="url(#goldRibbon)"/>
+    <path d="M 155,195 L 132,180 L 130,120 L 142,155 Z" fill="#854D0E" opacity="0.3"/>
+
+    <!-- Starburst Outer Medal -->
+    <polygon points="100.00,25.00 105.14,31.22 111.29,25.99 115.27,33.01 122.23,28.92 124.93,36.53 132.50,33.71 133.84,41.67 141.78,40.21 141.72,48.28 149.79,48.22 148.33,56.16 156.29,57.50 153.47,65.07 161.08,67.77 156.99,74.73 164.01,78.71 158.78,84.86 165.00,90.00 158.78,95.14 164.01,101.29 156.99,105.27 161.08,112.23 153.47,114.93 156.29,122.50 148.33,123.84 149.79,131.78 141.72,131.72 141.78,139.79 133.84,138.33 132.50,146.29 124.93,143.47 122.23,151.08 115.27,146.99 111.29,154.01 105.14,148.78 100.00,155.00 94.86,148.78 88.71,154.01 84.73,146.99 77.77,151.08 75.07,143.47 67.50,146.29 66.16,138.33 58.22,139.79 58.28,131.72 50.21,131.78 51.67,123.84 43.71,122.50 46.53,114.93 38.92,112.23 43.01,105.27 35.99,101.29 41.22,95.14 35.00,90.00 41.22,84.86 35.99,78.71 43.01,74.73 38.92,67.77 46.53,65.07 43.71,57.50 51.67,56.16 50.21,48.22 58.28,48.28 58.22,40.21 66.16,41.67 67.50,33.71 75.07,36.53 77.77,28.92 84.73,33.01 88.71,25.99 94.86,31.22" fill="url(#goldBorder)"/>
+
+    <!-- Outer Circular Gold Ring -->
+    <circle cx="100" cy="90" r="54" fill="url(#goldRadial)" stroke="url(#goldBorder)" stroke-width="2"/>
+
+    <!-- Inner Dotted / Stitched Line -->
+    <circle cx="100" cy="90" r="49" fill="none" stroke="#FEF9C3" stroke-width="1.2" stroke-dasharray="2,2"/>
+
+    <!-- Inner Sunburst Gold Core -->
+    <circle cx="100" cy="90" r="46" fill="url(#goldRadial)"/>
+
+    <!-- Arc Text Top: GARANTIA DE SATISFAÇÃO -->
+    <text font-family="'Sora', sans-serif" font-size="7.5" font-weight="800" fill="#422006" letter-spacing="0.1em">
+      <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">
+        GARANTIA DE SATISFAÇÃO
+      </textPath>
+    </text>
+
+    <!-- Center Big Number 15 -->
+    <text x="100" y="88" text-anchor="middle" font-family="'Archivo Black', sans-serif" font-size="34" font-weight="900" fill="#1C1917" letter-spacing="-0.03em">
+      15
+    </text>
+
+    <!-- Subtitle: DIAS DE GARANTIA -->
+    <text x="100" y="101" text-anchor="middle" font-family="'Sora', sans-serif" font-size="7.5" font-weight="900" fill="#1C1917" letter-spacing="0.08em">
+      DIAS DE
+    </text>
+    <text x="100" y="110" text-anchor="middle" font-family="'Sora', sans-serif" font-size="7.5" font-weight="900" fill="#1C1917" letter-spacing="0.08em">
+      GARANTIA
+    </text>
+
+    <!-- Curved Gold Banner across Bottom -->
+    <path d="M 32,130 Q 100,146 168,130 L 164,142 Q 100,158 36,142 Z" fill="#854D0E"/>
+    <path d="M 35,128 Q 100,144 165,128 L 162,139 Q 100,155 38,139 Z" fill="url(#goldBorder)"/>
+    <path d="M 38,130 Q 100,145 162,130 L 160,137 Q 100,152 40,137 Z" fill="url(#goldRibbon)"/>
+
+    <!-- Banner Ribbon Text: SATISFAÇÃO GARANTIDA -->
+    <text font-family="'Sora', sans-serif" font-size="6.8" font-weight="900" fill="#422006" letter-spacing="0.08em">
+      <textPath href="#textArcBanner" startOffset="50%" text-anchor="middle">
+        ★ SATISFAÇÃO GARANTIDA ★
+      </textPath>
+    </text>
+  </g>
+</svg>
