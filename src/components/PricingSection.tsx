@@ -30,7 +30,7 @@ export function PricingSection() {
             <span>POR APENAS:</span>
             <strong className="price">{PRICING.basic.price}</strong>
             <a className="buy secondary-buy" href={PRICING.basic.checkoutUrl}>
-              QUERO O PLANO BÁSICO
+              QUERO ACESSAR AGORA
             </a>
           </article>
 
@@ -108,7 +108,7 @@ export function PricingSection() {
 
             {/* Botão de Compra */}
             <a className="buy buy-highlight" href={PRICING.complete.checkoutUrl}>
-              QUERO O PLANO COMPLETO
+              QUERO ACESSAR AGORA
             </a>
 
             {/* Ícones de Formas de Pagamento (Payt, Pix, Visa, Mastercard) */}
